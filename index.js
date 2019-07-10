@@ -39,7 +39,7 @@ module.exports = {
     return ['app'];
   },
 
-  included: function(app, parentAddon) {
+  included(app, parentAddon) {
     this._super.included.apply(this, arguments);
     
     // support for nested addon
